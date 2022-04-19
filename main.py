@@ -115,9 +115,9 @@ def montePi(myturtle=None, num_darts=0):
   return approximatePi
 
 #asking user for birth year and returing their current age. 
-def age(birth_year=0):
-  current_year = 2022
-  age = current_year - birth_year
+def age(birthyear=0):
+  currentyear = 2022
+  age = currentyear - birthyear
   return age
 
 def main():
@@ -155,9 +155,10 @@ def main():
     print("\nThe estimation of pi using "+str(number_darts)+" virtual darts is " + str(approx_pi))
     print("\tPart C Complete...")
   
-    user_birth_year = int(input("\nPlease input the Year You Were Born In:")
-    calculatedAge = age(user_birth_year)
-    print("\nSince you were born in",     str(birth_year), "you are", str(calculatedAge), "years old")
+    birthyear = int(input("Please input the Year You Were Born In:"))
+    age(birthyear)
+    CalculatedAge = age(birthyear)
+    print("\nSince you were born in",       str(birthyear), "you are", str(CalculatedAge), "years old")
 
     window.exitonclick()
 
